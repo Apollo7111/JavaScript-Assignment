@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    let num1 = parseFloat(prompt("Enter first number:"));
+    let num2 = parseFloat(prompt("Enter second number:"));
+    let num3 = parseFloat(prompt("Enter third number:"));
+    let sum = num1 + num2 + num3;
+    document.querySelector('#target').innerHTML = `The sum is ${sum}.`;
+</script>
+</body>
+</html>

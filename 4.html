@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    let name = prompt("Enter your name:");
+    let randomNum = Math.floor(Math.random() * 4);
+    let house = null;
+    switch (randomNum) {
+        case 0:
+            house = 'Gryffindor';
+            break;
+        case 1:
+            house = 'Hufflepuff';
+            break;
+        case 2:
+            house = 'Ravenclaw';
+            break;
+        case 3:
+            house = 'Slytherin';
+            break;
+    }
+    document.querySelector('#target').innerHTML = `${name} you are ${house}.`;
+</script>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    function checkLeapYear(year) {
+
+    if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+    let startYear = prompt("Enter the starting year:");
+    let endYear = prompt("Enter the ending year:");
+    document.createElement('ul')
+
+    for (let year = startYear; year <= endYear; year++) {
+        if (checkLeapYear(year)) {
+             let li = document.createElement('li');
+        li.innerHTML = year;
+        document.querySelector('#target').appendChild(li);
+        }
+    }
+
+</script>
+</body>
+</html>

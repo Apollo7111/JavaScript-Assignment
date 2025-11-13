@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    function checkLeapYear(year) {
+
+    if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+        return 'a leap year';
+    } else {
+        return 'not a leap year';
+    }
+}
+
+    const year = prompt('Enter a year:');
+    document.querySelector('#target').innerHTML = `${year} is ${checkLeapYear(year)}.`;
+</script>
+</body>
+</html>
