@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    const dogs = [];
+    for (let i = 0; i < 6; i++) dogs.push((prompt(`Dog ${i + 1}:`)));
+    dogs.sort((a, b) => b.localeCompare(a));
+    document.querySelector('#target').innerHTML = '<h2>Dogs</h2><ul>' + dogs.map(n => `<li>${n}</li>`).join('') + '</ul>';
+
+</script>
+</body>
+</html>
