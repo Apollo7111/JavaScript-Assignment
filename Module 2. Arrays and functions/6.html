@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    function rollDice(){
+        return Math.floor(Math.random() * 6) + 1;
+    }
+    let target = document.querySelector("#target").appendChild(document.createElement('ul'));
+    let rolledDice = rollDice();
+    while(rolledDice !== 6){
+        target.innerHTML += `<li>${rolledDice}</li>`;
+        rolledDice = rollDice();
+    }
+        target.innerHTML += `<li>${rolledDice}</li>`;
+
+    
+</script>
+</body>
+</html>

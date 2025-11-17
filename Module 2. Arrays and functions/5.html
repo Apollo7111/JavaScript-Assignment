@@ -11,12 +11,15 @@
     'use strict';
     let number = prompt("Enter a number:");
     let list = [];
-    while (parseFloat(number) != 0){
-        console.log(number);
+    // list.push(number);
+    // console.log(number);
+    // console.log(Boolean(list.find(n => n === number) === undefined));
+    while (Boolean(list.find(n => n === number) === undefined)){
         list.push(number);
         number = prompt("Enter a number:");
     }
-    list.sort(function(a, b){return b - a});
+    window.alert(`${number} already entered!`);
+    list.sort(function(a, b){return a - b});
     document.querySelector("#target").innerHTML = list;
 </script>
 </body>

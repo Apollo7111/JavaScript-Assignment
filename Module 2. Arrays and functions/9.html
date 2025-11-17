@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    function evenOdd(arr){
+        let list = [];
+        for(let e of arr){
+            if(e % 2 === 0){
+                list.push(e);
+            }
+        }
+        return list;
+}
+
+    let array = [2,7,5,4,6,5,3,8,9,10,12,12,11,1,1,2,3,4,5]
+    document.querySelector("#target").innerHTML = `Original array: [${array}]<br>Even numbers array: [${evenOdd(array)}]`;
+</script>
+</body>
+</html>

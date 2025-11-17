@@ -9,14 +9,6 @@
 <p id="target"></p>
 <script>
     'use strict';
-    let number = prompt("Enter a number:");
-    let list = [];
-    while (parseFloat(number) != 0){
-        console.log(number);
-        list.push(number);
-        number = prompt("Enter a number:");
-    }
-    list.sort(function(a, b){return b - a});
     document.querySelector("#target").innerHTML = list;
 </script>
 </body>
