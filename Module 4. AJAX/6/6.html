@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chuck Norris Search</title>
+  <script src="6.js" defer></script>
+</head>
+<body>
+  <h1>Search Chuck Norris Jokes</h1>
+
+  <form id="searchForm" action="https://api.chucknorris.io/jokes/search" method="GET">
+    <input id="query" name="query" type="text" placeholder="Enter search term" />
+    <input type="submit" value="Search" />
+  </form>
+
+  <section id="results"></section>
+</body>
+</html>
